@@ -1,0 +1,18 @@
+<html>
+<body onload="doUA()">
+        <h1>Success</h1>
+        Your browser <b><span id="ua"></span><noscript>*activate JavaScript*</noscript></b><br>
+        supports <b>TLSv1.2</b> and at least one of the following ciphers:<br>
+        <ul>
+                <li>ECDHE-RSA-AES256-GCM-SHA384</li>
+                <li>ECDHE-RSA-AES256-CBC-SHA384</li>
+                <li>RSA-AES-256-GCM-SHA384</li>
+                <li>RSA-AES256-CBC-SHA256</li>
+        </ul>
+        <script>
+                function doUA() {
+                        document.getElementById("ua").innerHTML = navigator.userAgent;
+                }
+        </script>
+</body>
+</html>
